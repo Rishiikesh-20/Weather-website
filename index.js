@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}));
 const __dirname=dirname(fileURLToPath(import.meta.url));
 let apiKey='';
-fs.readFile(__dirname+'/public/secret.txt', 'utf8', (err, data) => {
+fs.readFile('/etc/secrets/secret.txt', 'utf8', (err, data) => {
   if (err) {
     console.error('Error reading the file:', err);
     return;
