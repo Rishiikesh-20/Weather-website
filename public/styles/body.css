@@ -1,0 +1,204 @@
+.Today-weather{
+  display:flex;
+  flex-direction: column;
+  margin-top:40px;
+  width:800px;
+  height: 250px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.Today-top-div{
+  display:flex;
+  padding:10px;
+  background-color: rgba(42, 170, 221, 0.5); 
+}
+
+.Today-body-div{
+  display:flex;
+  justify-content: space-between;
+}
+
+.Today-body-div-left{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left:20px;
+}
+.big-degree{
+  font-weight: 500;
+  font-size:80px;
+}
+.Today-body-div-right{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-right:40px;
+}
+.weather-image{
+  width:100px;
+  height:100px;
+  
+}
+.forecast{
+  margin-top:50px;
+  border:none;
+  height:300px;
+  background: linear-gradient(to right,rgb(38, 161, 227),yellow);
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+}
+
+.forecast-top{
+  padding:10px;
+  border-bottom: 0.5px solid grey;
+}
+.forecast-hori{
+  display:flex;
+  justify-content: space-around;
+  font-size: 18px;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+.forecast-photo{
+  width:50px;
+  height:50px;
+}
+
+.hourly-top{
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  padding:10px;
+}
+
+.hourly-div {
+  width: 800px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 50px;
+  border: none;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hourly-bottom {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width:100%;
+  gap: 10px;
+}
+
+.hourly-bottom::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hourly-bottom::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+.hourly-bottom::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+.hourly-column-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  height: 150px;
+  width: 100px;
+  border-right: 1px solid grey;
+  flex: 0 0 auto;
+}
+
+.hourly-time {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(132, 0, 255);
+}
+
+.hourly-degree {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(205, 182, 50);
+}
+
+.hourly-symbol {
+  width: 40px;
+  height: 40px;
+}
+
+.hourly-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hourly-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+.hourly-button.b1 {
+  left: 10px;
+}
+
+.hourly-button.b2 {
+  right: 10px;
+}
+
+.last-box{
+  background: linear-gradient(to right,rgb(38, 161, 227),yellow);
+  width:800px;
+  height:200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top:50px;
+  padding:20px;
+}
+.last-box-top{
+  font-size: 22px;
+  font-weight: 500;
+}
+.last-box-row{
+  font-size: 18px;
+  font-weight: 500;
+  color:maroon;
+  display:flex;
+  justify-content: space-between;
+  margin-top:10px;
+}
+.sun{
+  width:50px;
+  height:50px;
+}
+.moon{
+  width:35px;
+  height:35px;
+  margin-left:10px;
+}
+
+
+
